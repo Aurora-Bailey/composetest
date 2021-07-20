@@ -7,6 +7,7 @@ services:
     volumes:
       - .:/code
     environment:
+      text: ${TAG}
       FLASK_ENV: development
   redis:
     image: "redis:alpine"
